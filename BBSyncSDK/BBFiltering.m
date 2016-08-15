@@ -302,7 +302,7 @@ void computeLineWidth(float vel, float pressure, float *pLineWidth)
     }
     
     // Find the indices for mass (pressure).
-    for (j = 1; i < MASS_NUM_ENTRIES; j++)
+    for (j = 1; j < MASS_NUM_ENTRIES; j++)
     {
         if (pressure <= mass[j])
             break;
